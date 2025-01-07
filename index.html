@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troymex for Bunda</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loginScreen" class="screen">
+    <h1>Troymex for Bunda</h1>
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="e.g., 210100701" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginError" class="error"></p>
+  </div>
+
+  <div id="gameScreen" class="screen hidden">
+    <h1>Troymex for Bunda</h1>
+    <p id="welcomeMessage"></p>
+    <div id="game">
+      <h2 id="questionText"></h2>
+      <div id="options"></div>
+    </div>
+    <p id="feedback"></p>
+    <button id="nextButton" class="hidden">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
